@@ -21,7 +21,7 @@ class Location {
       ]),
     ];
   }
-  static Location fetchByID(int locationID) {
+  static fetchByID(int locationID) {
     // fetch all locations, iterate theme and when we find the location
     // with the ID we want, return it immediately
     List<Location> locations = Location.fetchAll();
@@ -30,7 +30,6 @@ class Location {
         return locations[i];
       }
     }
-    return null;
   }
 
 }
